@@ -1,0 +1,93 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+     
+<html lang="en">
+
+<head>
+{% block extra-head %}{% endblock %}
+    
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<meta content="en-gb" http-equiv="Content-Language" />
+	<meta content="{% block metadescription %}{% endblock %}" name="description" /> 
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	{% block canonical %}{% endblock %}
+    <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/styles.css" />
+    
+    <title>{% block title %}Stop fucking saying hello to me - thanks China!{% endblock %}</title>
+    <!--[if lte IE 6]>
+		<link rel="stylesheet" media="screen" type="text/css" href="/css/ie6.css" />
+	<![endif]-->
+	{% if ga_is_on %}
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
+	{% else %}
+	<script src="/js/jquery.min.js" type="text/javascript"></script>
+	<script src="/js/jquery.scrollTo-1.4.2-min.js" type="text/javascript"></script>
+	{% endif %}
+	
+	{% if ga_is_on %}
+	<!-- Place this tag in your head or just before your close body tag -->
+	<script type="text/javascript" src="https://apis.google.com/js/plusone.js">{lang: 'en-GB'}</script>
+	{% endif %}
+	
+	<style type="text/css">
+	h1.fontface {font: 80px/78px 'LeagueGothicRegular', Arial, sans-serif;letter-spacing: -1px;}
+	h2.fontface {font: 50px/58px 'LeagueGothicRegular', Arial, sans-serif;letter-spacing: 0px;}
+	h2.bearpaw {font: 120px/128px 'BearpawRegular', Arial, sans-serif;letter-spacing: 0;}
+	span.fontface {font: 25px/32px 'LeagueGothicRegular', Arial, sans-serif;letter-spacing: 0.5px;}
+	</style>
+   
+
+{% block extracss %}{% endblock %}
+
+</head>
+
+<body>
+
+<!--[if lte IE 6]>
+<div id="iemessage"><p>This site won't work in IE6 - it's a 10 year old browser, and you should replace it with something better like <a href="http://www.mozilla.com/">Firefox</a> or <a href="http://www.google.com/chrome/">Chrome</a></div>
+<![endif]-->
+
+	    
+	    <!-- The header area -->
+	    
+		
+		<!-- the main section of the page -->
+
+		{% block content %}{% endblock %}
+	   	    
+
+	    
+	    <!-- any extra content for the page -->
+	    {% block extra-content %}{% endblock %}
+
+		<br clear="all"/>
+		
+
+
+    
+    
+    </div>
+
+{% block extrajs %}{% endblock %}
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+      	var e = $(window).height();
+      	$('.page').css('height', e);
+      });
+      
+      $(document).keydown(function(event) {
+  		if (event.which === 32) {
+  			event.preventDefault();
+    		$().scrollTo( '+='+ $(window).height(), 500 );
+		}
+	  });
+
+    </script>
+
+
+</body>
+
+</html>

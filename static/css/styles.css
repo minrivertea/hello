@@ -1,0 +1,614 @@
+html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+
+
+caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}del,ins{text-decoration:none;}
+
+
+html {
+  border: none;
+  margin: none;
+  padding: none;
+  background-color: #dfecf1;	
+}
+
+body {
+  font-family: helvetica,arial,sans-serif;	
+  background-color: #d4e8f0;
+  margin: 0;
+  padding: 0;
+  background: url('/images/paper.jpg') repeat #f5654d;
+}
+
+/* links */
+
+a img {
+  border: none;	
+}
+
+a img:hover {
+  opacity: 0.8;	
+}
+
+a {
+  text-decoration: none;	
+}
+
+a:link, a:visited {
+  color: #ffe400;
+  text-decoration: underline;
+}
+
+a:hover, a:active {
+  color: #f67b7b;
+}
+
+/* end links */
+
+/* basic typography */
+
+p {
+  margin: 0 0 20px 0;
+  line-height: 1.5em;	
+}
+
+ul {
+	
+}
+
+ol {}
+
+h1 {
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 24px;	
+}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+strong {}
+
+@font-face {
+    font-family: 'LeagueGothicRegular';
+    src: url('/css/fonts/League_Gothic-webfont.eot');
+    src: url('/css/fonts/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/css/fonts/League_Gothic-webfont.woff') format('woff'),
+         url('/css/fonts/League_Gothic-webfont.ttf') format('truetype'),
+         url('/css/fonts/League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BearpawRegular';
+    src: url('/css/fonts/BEARPAW_-webfont.eot');
+    src: url('/css/fonts/BEARPAW_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/css/fonts/BEARPAW_-webfont.woff') format('woff'),
+         url('/css/fonts/BEARPAW_-webfont.ttf') format('truetype'),
+         url('/css/fonts/BEARPAW_-webfont.svg#BearpawRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* global styles */
+
+.page {
+  width: 100%;
+  position: relative;
+}
+
+.inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 900px;
+  height: 600px;
+  margin-left: -450px;
+  margin-top: -140px;	
+}
+
+.next-button {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 80px;
+}
+
+h1 span.hello {
+  color: #000;
+  text-shadow: 0 1px 1px #fff;	
+}
+
+/* page 1 styles */
+
+#page1 {
+
+}
+
+#page1 .inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 900px;
+  height: 600px;
+  margin-left: -450px;
+  margin-top: -140px;
+  text-align: center;
+}
+
+#page1 h1 {
+    border-bottom: 1px solid #bd5757;
+    color: #A72727;
+    font-size: 100px;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    line-height: 1em;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+
+#page1 h1 span {
+  color: #000;	
+}
+
+#page1 p {
+  font-size: 13px;	
+}
+
+#page1 p strong {
+  text-transform: uppercase;	
+  font-size: 18px;
+}
+
+#page1 img.space {
+  margin-top: 160px;	
+}
+
+#page1 img.space-tip {
+  position: absolute;
+  bottom: 230px;
+  left: 110px;	
+}
+
+
+/* END page 1 styles */
+
+/* page 2 styles */
+
+#page2 {
+  background: url('/images/sunburst.jpg') no-repeat bottom left #a72727;	
+}
+
+#page2 .inner {
+  width: 90%;
+  margin-left: 0px;
+  top: 50px;
+  left: 80px;
+  margin-top: 0;	
+}
+
+#page2 h1 {
+  color: #fff;
+  float: right;	
+  text-align: right;
+}
+
+#page2 img.one {
+  float: left;
+  position: relative;
+  top: 170px;
+  left: 400px;
+  color: #ffe400;
+  font-weight: bold;	
+}
+
+#page2 img.two {
+  float: right;
+  position: relative;
+  right: 200px;
+  color: #ffe400;
+  top: 70px;
+  font-weight: bold;	
+}
+
+#page2 img.swimming {
+  position: absolute;
+  bottom: 50px;
+  right: 130px;
+  border: 8px solid #fff;
+  box-shadow: 0 2px 5px #333;	
+}
+
+#page2 img.three-people {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;	
+}
+
+
+/* END page 2 styles */
+
+/* page 3 styles */
+#page3 {
+	
+}
+
+
+#page3 .inner p {
+  color: #333;
+  margin-top: 40px;	
+}
+
+#page3 .inner ul {
+  font-weight: ;
+  margin-left: 80px;
+  color: #333;	
+}
+
+#page3 .inner ul li {
+  margin-bottom: 10px;	
+}
+
+#page3 h1 {
+  color: #000;	
+}
+/* END page 3 styles */
+
+/* page 4 styles */
+#page4 {
+  background-color: #000;	
+}
+
+#page4 .inner p {
+  color: #;
+  margin-top: 40px;	
+}
+
+#page4 h1 {
+  color: #fff;
+  text-align: center;	
+}
+
+/* END page 4 styles */
+
+/* page 5 styles */
+#page5 {
+  background-color: #fff;	
+}
+
+#page5 .inner {
+  height: 100px;
+  margin-top: -50px;
+}
+
+#page5 .inner p {
+  color: #;
+  margin-top: 40px;	
+}
+
+#page5 h1 {
+  font-size: 20px;
+  text-align: center;	
+}
+/* END page 5 styles */
+
+/* page 6 styles */
+#page6 {
+  background-color: #fff;	
+}
+
+#page6 .inner {
+  height: 100px;
+  margin-top: -70px;	
+}
+
+#page6 h1 {
+  font-size: 80px;
+  text-align: center;	
+}
+/* END page 6 styles */
+
+/* page7 styles */
+#page7 {
+  background-color: #fff;	
+}
+
+#page7 .inner {
+  height: 100px;
+  margin-top: -90px;	
+}
+
+#page7 h1 {
+  font-size: 350px;
+  text-align: center;
+  color: #B50E0E;
+  text-shadow: 0 6px 14px #333;	
+}
+/* END page 7 styles */
+
+/* page8 styles */
+#page8 {
+  background-color: #a5d4dc;	
+}
+
+#page8 .inner {
+  width: 90%;
+  margin-left: 0;
+  margin-top: 0;
+  top: 50px;
+  left: 80px;	
+}
+
+#page8 .places {
+  float: left;
+  margin: 30px 0 50px;	
+  width: 100%;
+}
+
+#page8 .places ul {
+  margin-left: 80px;
+  list-style-type: square;
+  float: left;	
+}
+
+#page8 .places ul li {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#page8 .explain, .who {
+  padding: 20px 30px;
+  border-radius: 15px;
+  width: 500px;
+  background-color: #fff;
+  float: left;	
+  height: 80px;
+}
+
+#page8 .explain {
+  margin-right: 30px;	
+}
+
+#page8 .explain h2, .who h2 {
+  float: left;
+  margin-right: 20px;
+  color: #b50e0e;	
+}
+
+#page8 .explain p, .who p {
+  float: left;
+  width: 370px;	
+  font-size: 13px;
+}
+
+#page8 h1 {
+  text-align: left;
+  color: #000;	
+  margin-bottom: 20px;
+}
+
+#page8 h1 span {
+  color: #b50e0e;
+}
+
+#page8 p {
+  color: #000;
+  float: left;
+  margin-right: 30px;
+}
+
+#page8 p span {
+  font-weight: bold;
+  color: #b50e0e;
+  font-size: 18px;
+  letter-spacing: -1px;
+  text-decoration: underline;	
+}
+
+#page8 div 
+
+/* END page 8 styles */
+
+
+#page9 {
+  background-color: #b7c8e6;	
+}
+
+#page9 .inner {
+  margin-top: -200px;	
+}
+
+#page9 h1 span {
+  color: #ff0000;
+  text-shadow: 0 1px 3px #fff;	
+}
+
+#page10 {
+  background-color: #fff;	
+}
+
+#page10 .inner {
+  margin-top: 0;
+  margin-left: 0;
+  top: 50px;
+  left: 80px;
+  width: 90%;	
+}
+
+#page10 .inner p.story {
+  position: relative;
+	
+}
+
+#page10 .inner p span {
+  color: #b50e0e ;
+  font-weight: bold;	
+}
+
+#page10 h1 {
+  margin-bottom: 40px;
+  font-size: 60px;	
+}
+
+#page10 h2 {
+  letter-spacing: -3px;
+  margin-bottom: 30px;	
+}
+
+#page10 h1 span {
+  color: #b50e0e;	
+}
+
+#page10 img.the-scream {
+  float: left;
+  margin-right: 40px;
+  box-shadow: 0 2px 5px #333;	
+}
+
+#page11 {
+	
+}
+
+#page11 .inner {
+  margin-top: 0;
+  margin-left: 0;
+  width: 90%;
+  left: 80px;
+  top: 50px;	
+}
+
+#page11 h1, #page11 p span {
+  color: #A72727;	
+}
+
+#page11 h1 span {
+  color: #000;	
+}
+
+#page12 {
+
+}
+
+#page12 .inner {
+  margin-top:0;
+  margin-left:0;
+  width: 90%;
+  left: 80px;
+  top: 50px;
+}
+
+#page12 h1 span.number, #page13 h1 span.number {
+    border: 10px solid #000000;
+    border-radius: 65px 65px 65px 65px;
+    color: #000000;
+    display: block;
+    float: left;
+    font-weight: bold;
+    height: 63px;
+    margin-right: 20px;
+    padding: 14px 0 20px 38px;
+    position: relative;
+    top: -20px;
+    width: 58px;
+}
+
+#page13 h1 span.number {
+    padding: 14px 0 20px 30px;	
+}
+
+#page12 h1 {
+  color: #A72727;	
+}
+
+#page12 h1 span {
+  color: #000;	
+}
+
+#page13 .inner {
+   margin-top:0;
+  margin-left:0;
+  width: 90%;
+  left: 80px;
+  top: 50px;
+}
+
+#page13 h1 {
+  color: #A72727;	
+}
+
+#page13 h1 span {
+  color: #000;	
+}
+
+#page13 div.left {
+    float: left;
+    margin-right: 50px;
+    margin-top: 50px;
+    width: 400px;
+}
+
+#page13 div.left ul {
+  margin: 20px 0 0 0;
+  padding: 0;
+  font-size: 20px;
+  list-style-type: none;
+  line-height: 1.3em;
+  text-align: right;	
+}
+
+#page13 .left ul li {
+  margin-bottom: 20px;	
+}
+
+#page13 img.yes {
+  float: left;	
+  margin-top: 50px;
+}
+
+
+
+#page14 {
+	
+}
+
+#page14 .inner {
+  width: 90%;
+  margin-left: 0;
+  left: 80px;
+  margin-top: 0;
+  top: 50px;	
+}
+
+#page14 .inner p {
+  margin-top: 30px;
+  font-size: 14px;	
+}
+
+#page14 img.oneworld {
+    left: 680px;
+    position: absolute;
+    top: 280px;
+}
+
+#page14 .inner .countries {
+  float: left;
+  width: 600px;	
+  margin-top: 50px;
+}
+
+#page14 .inner .countries div {
+  float: left;
+  width: 150px;
+  margin-bottom: 20px;
+  font-family: Georgia, serif;	
+}
+
+#page14 .inner img {
+  border: 3px solid #fff;
+  position: relative;
+  top: 10px;	
+  margin-right: 5px;
+  box-shadow: 0 1px 2px #333;
+} 
